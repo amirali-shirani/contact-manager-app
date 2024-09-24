@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: 'Vazir', 'Tahoma', 'Ubuntu' , 'sans-serif' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    background-color: #282a36;
+}
+input::placeholder , input  , option , select{
+    color: white !important ;
+}
+input , select , option{
+    background-color: #44475a !important;
+    margin-bottom:.5rem ;
+}
