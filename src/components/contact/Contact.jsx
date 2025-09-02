@@ -8,15 +8,13 @@ const Contact = ({contact}) => {
     const {deleteContact} = useContext(ContactContext);
     return (
         <>
-            <div className="col-md-6 col-sm-10 mx-auto col-sm-10 my-2">
-                <div className="card " style={{backgroundColor: CurrentLine}}>
+            <div className="col-md-6 col-sm-10 mx-auto col-sm-10 my-2" >
+                <div className="card h-100" style={{backgroundColor: CurrentLine}}>
                     <div className="card-body d-flex flex-row justify-content-center align-items-center">
                         <div className="col-md-4 col-sm-4">
-                            <div className="">
                                 <img src={contact.photo ? contact.photo : "https://placehold.co/400"}
-                                     className="card-img rounded"
-                                     alt="" style={{border: `1px solid ${Purple}`}}/>
-                                </div>
+                                     className="card-img  rounded object-fit-cover"
+                                     alt="" style={{border: `1px solid ${Purple} ` , height : "8rem"}}/>
                         </div>
                         <div className="col-sm-7 ms-2">
                             <div style={{backgroundColor: CurrentLine}}>
