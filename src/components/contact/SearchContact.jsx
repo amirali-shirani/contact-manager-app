@@ -7,10 +7,10 @@ const SearchContact = () => {
     return (
         <>
             <div className="col-md-6 mt-sm-3">
-                <form className="form-check-inline d-flex">
+                <form className="form-check-inline gap-2 d-flex justify-content-center align-items-baseline">
                     <input onChange={e => contactSearch(e.target.value)}  className="form-control" style={{backgroundColor: CurrentLine}} placeholder="جستجوی مخاطب"
                            type="text" name="search"/>
-                    <span className="btn" style={{backgroundColor: Purple}}><i className="fa fa-search"></i></span>
+                    <span className="btn text-center" style={{backgroundColor: Purple }}><i className="fa fa-search"></i></span>
                 </form>
             </div>
         </>
