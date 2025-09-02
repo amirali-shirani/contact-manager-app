@@ -35,7 +35,7 @@ function App() {
         fetchData()
     }, [])
     const createContactForm = async (values) => {
-        ;
+
         try {
             setLoading(true)
             const {status, data} = await createContact(values)

@@ -4,12 +4,11 @@ import {Link} from "react-router-dom";
 import {Spinner} from "../index";
 import {useContext} from "react";
 import {ContactContext} from "../../context/contactContext";
-import {Formik, useFormik, Form, Field, ErrorMessage} from "formik";
+import {Formik, Form, Field, ErrorMessage} from "formik";
 import {contactSchema} from "../../validations/contactValidations";
-
 const CreateContact = () => {
     const {groups, loading, createContactForm} = useContext(ContactContext);
-    const formik = useFormik({})
+    // const formik = useFormik({})
     return (<>
         {loading ? <Spinner/> :
             <div className="container">

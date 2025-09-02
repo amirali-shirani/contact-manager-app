@@ -6,5 +6,5 @@ export const contactSchema = yup.object({
     mobile : yup.number().required("شماره تلفن همراه کاربر الزامی می باشد"),
     email : yup.string().email().required("ایمیل الزامی می باشد"),
     job : yup.string().nullable(),
-    groups : yup.string().required("گروه کاربر الزامی می باشد")
+    groups : yup.string().required("گروه کاربر الزامی می باشد"),
 })
